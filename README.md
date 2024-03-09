@@ -1,4 +1,4 @@
-# CuteOS video player
+# LingmoOS video player
 
 Open source video player built using Qt/QML and libmpv.
 

@@ -12,7 +12,7 @@ import QtQuick.Layouts 1.12
 import QtGraphicalEffects 1.12
 import Qt.labs.platform 1.0 as Platform
 
-import CuteUI 1.0 as CuteUI
+import LingmoUI 1.0 as CuteUI
 import mpv 1.0
 
 CuteUI.Window {
@@ -89,7 +89,7 @@ CuteUI.Window {
             anchors.centerIn: parent
             width: 128
             height: 128
-            source: "qrc:/images/cute-videoplayer.svg"
+            source: "qrc:/images/lingmo-videoplayer.svg"
             sourceSize: Qt.size(width, height)
             visible: playList.playlistView.count === 0
         }

@@ -46,11 +46,11 @@ static QApplication *createApplication(int &argc, char **argv, const QString &ap
 {
     QApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
     QApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
-    QApplication::setOrganizationName("cuteos");
+    QApplication::setOrganizationName("lingmoos");
     QApplication::setApplicationName(applicationName);
-    QApplication::setOrganizationDomain("cuteos.com");
+    QApplication::setOrganizationDomain("lingmo.org");
     QApplication::setApplicationDisplayName("Video Player");
-    QApplication::setWindowIcon(QIcon::fromTheme("cute-videoplayer"));
+    QApplication::setWindowIcon(QIcon::fromTheme("lingmo-videoplayer"));
     QApplication *app = new QApplication(argc, argv);
     return app;
 }
@@ -59,7 +59,7 @@ Application::Application(int &argc, char **argv, const QString &applicationName)
     : m_app(createApplication(argc, argv, applicationName))
 {
     // register mpris dbus service
-    QString mspris2Name(QStringLiteral("org.mpris.MediaPlayer2.cute.videoplayer"));
+    QString mspris2Name(QStringLiteral("org.mpris.MediaPlayer2.lingmo.videoplayer"));
     QDBusConnection::sessionBus().registerService(mspris2Name);
     QDBusConnection::sessionBus().registerObject(QStringLiteral("/org/mpris/MediaPlayer2"), this, QDBusConnection::ExportAdaptors);
     // org.mpris.MediaPlayer2 mpris2 interface
@@ -71,7 +71,7 @@ Application::Application(int &argc, char **argv, const QString &applicationName)
 
     // Translations
     QLocale locale;
-    QString qmFilePath = QString("%1/%2.qm").arg("/usr/share/cute-videoplayer/translations/").arg(locale.name());
+    QString qmFilePath = QString("%1/%2.qm").arg("/usr/share/lingmo-videoplayer/translations/").arg(locale.name());
     if (QFile::exists(qmFilePath)) {
         QTranslator *translator = new QTranslator(QApplication::instance());
         if (translator->load(qmFilePath)) {

@@ -16,7 +16,7 @@
 
 PlayListModel::PlayListModel(QObject *parent)
     : QAbstractListModel(parent)
-    , m_settings("cuteos", "cute-videoplayer")
+    , m_settings("lingmoos", "lingmo-videoplayer")
 {
     // Reion: init list.
     QStringList list = m_settings.value("List").toString().split(',');
