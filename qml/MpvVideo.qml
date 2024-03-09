@@ -6,7 +6,7 @@
 
 import QtQuick 2.12
 import QtQuick.Window 2.12
-import CuteUI 1.0 as CuteUI
+import LingmoUI 1.0 as CuteUI
 import mpv 1.0
 
 MpvObject {

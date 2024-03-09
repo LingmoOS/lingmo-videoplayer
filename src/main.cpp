@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
 #endif
 
-    Application app(argc, argv, "cute-videoplayer");
+    Application app(argc, argv, "lingmo-videoplayer");
 
     return app.run();
 }

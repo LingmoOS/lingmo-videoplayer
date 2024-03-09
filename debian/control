@@ -1,4 +1,4 @@
-Source: cute-videoplayer
+Source: lingmo-videoplayer
 Section: video
 Priority: optional
 Maintainer: CuteOS <support@cuteos.com>
@@ -13,9 +13,9 @@ Build-Depends: cmake,
                qttools5-dev-tools,
                libmpv-dev
 Standards-Version: 4.5.0
-Homepage: https://cuteos.com
+Homepage: https://lingmo.org
 
-Package: cute-videoplayer
+Package: lingmo-videoplayer
 Architecture: any
 Depends: qml-module-qtquick-controls2,
          qml-module-qtquick2,

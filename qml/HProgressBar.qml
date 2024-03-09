@@ -11,7 +11,7 @@ import QtQuick.Layouts 1.12
 import QtQuick.Shapes 1.12
 import QtGraphicalEffects 1.0
 
-import CuteUI 1.0 as CuteUI
+import LingmoUI 1.0 as CuteUI
 
 Slider {
     id: root
